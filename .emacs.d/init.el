@@ -1,9 +1,9 @@
 (gcmh-mode)
 
-(setq backup-directory-alist '(("." . "backups"))
-      backup-by-copying t)
+;(setq backup-directory-alist '(("." . "backups"))
+;      backup-by-copying t)
 
-(load-theme 'leuven)
+(load-theme 'modus-vivendi)
 (global-display-line-numbers-mode)
 
 (setq-default show-paren-delay 0)

@@ -37,6 +37,7 @@ alias obsidian="flatpak run md.obsidian.Obsidian"
 alias vi="vim -u NONE -c ':set nocompatible'"
 export EDITOR='vim'
 . "$HOME/.cargo/env"
+alias ls="ls --group-directories-first -F"
 
 function cl() {
 	if [[ $2 -eq "o" ]]; then
