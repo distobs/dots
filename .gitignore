@@ -1,0 +1,16 @@
+# Vim
+pack/
+persistent-undo/
+.netrwhist
+
+# Neovim
+persistent-undo/
+lazy-lock.json
+1
+
+# Emacs
+auto-save-list/
+backups/
+eln-cache/
+elpa/
+
