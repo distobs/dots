@@ -1,7 +1,7 @@
 (gcmh-mode)
 
-;(setq backup-directory-alist '(("." . "backups"))
-;      backup-by-copying t)
+(setq backup-directory-alist '(("." .  "~/.emacs.d/backups"))
+      backup-by-copying t)
 
 (load-theme 'modus-vivendi)
 (global-display-line-numbers-mode)
@@ -25,7 +25,7 @@
 
 (use-package eglot
   :hook (c-mode-common . eglot-ensure))
-  
+
 (use-package evil
   :config (evil-mode 1))
 
