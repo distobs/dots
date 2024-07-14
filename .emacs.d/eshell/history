@@ -6,3 +6,10 @@ clear
 cp ../utils/stack/stack.* .
 ls
 clear
+swift 1-properties-3.swift 
+ls
+swift 1-properties-3.swift 
+exit
+ls
+swift 1-properties-3.swift 
+exit

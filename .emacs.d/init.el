@@ -29,6 +29,10 @@
 (use-package evil
   :config (evil-mode 1))
 
+(defun term () (interactive)
+       (split-window-below 20 (selected-window))
+       (eshell))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -37,7 +41,7 @@
  '(column-number-mode t)
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
- '(package-selected-packages '(evil company yasnippet lua-mode go-mode gcmh)))
+ '(package-selected-packages '(swift-mode evil company yasnippet lua-mode go-mode gcmh)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
