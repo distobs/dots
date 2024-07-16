@@ -46,3 +46,5 @@ function cl() {
 		git clone https://github.com/$1
 	fi
 }
+
+export MANPAGER="vim +MANPAGER --not-a-term -"
