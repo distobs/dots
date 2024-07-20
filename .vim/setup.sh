@@ -13,3 +13,4 @@ git clone --branch=master --depth=1 https://github.com/mattn/emmet-vim 'opt/emme
 git clone --depth=1 --branch=release https://github.com/neoclide/coc.nvim 'opt/coc.nvim'
 git clone --depth=1 --branch=master https://github.com/morhetz/gruvbox 'start/gruvbox'
 git clone --depth=1 --branch=master https://github.com/SirVer/ultisnips 'opt/ultisnips'
+git clone --depth=1 --branch=master https://github.com/ravishi/vim-gnu-c 'start/vim-gnu-c'
