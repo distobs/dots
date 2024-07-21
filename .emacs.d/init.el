@@ -9,7 +9,8 @@
 (setq-default show-paren-delay 0)
 (show-paren-mode)
 
-(setq c-default-style "linux")
+;;(setq c-default-style "linux")
+(setq c-default-style "gnu")
 
 (blink-cursor-mode -1)
 
