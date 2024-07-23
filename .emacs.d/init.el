@@ -3,6 +3,8 @@
 (setq backup-directory-alist '(("." .  "~/.emacs.d/backups"))
       backup-by-copying t)
 
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
 (load-theme 'modus-vivendi)
 (global-display-line-numbers-mode)
 
