@@ -11,8 +11,7 @@
 (setq-default show-paren-delay 0)
 (show-paren-mode)
 
-;;(setq c-default-style "linux")
-(setq c-default-style "gnu")
+(setq c-default-style "linux")
 
 (blink-cursor-mode -1)
 
@@ -44,7 +43,9 @@
  '(column-number-mode t)
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
- '(package-selected-packages '(swift-mode evil company yasnippet lua-mode go-mode gcmh)))
+ '(markdown-command "pandoc")
+ '(package-selected-packages
+   '(markdown-mode swift-mode evil company yasnippet lua-mode go-mode gcmh)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

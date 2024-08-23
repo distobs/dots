@@ -97,3 +97,6 @@ set undofile
 
 " Emmet
 autocmd BufEnter *.html packadd emmet-vim
+
+" markdown
+autocmd BufEnter *.md set ft=pandoc
