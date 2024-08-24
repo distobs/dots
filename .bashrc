@@ -34,10 +34,10 @@ worktimer () {
 
 export PROMPT_DIRTRIM=3
 alias obsidian="flatpak run md.obsidian.Obsidian"
-alias vi="vim -u NONE -c ':set nocompatible'"
-export EDITOR='vim'
+export EDITOR='nvim'
 . "$HOME/.cargo/env"
 alias ls="ls --group-directories-first -F"
+alias vim="nvim"
 
 function cl() {
 	if [[ $2 -eq "o" ]]; then
@@ -47,4 +47,4 @@ function cl() {
 	fi
 }
 
-export MANPAGER="vim +MANPAGER --not-a-term -"
+export MANPAGER="nvim +Man!"
