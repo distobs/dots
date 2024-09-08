@@ -69,6 +69,9 @@ set undofile
 set nohlsearch
 
 autocmd BufEnter *.md set ft=pandoc
+
+" format file
+map ff mfgggqg`f
 ]])
 
 require("user.lazy")
