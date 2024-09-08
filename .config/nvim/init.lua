@@ -71,7 +71,7 @@ set nohlsearch
 autocmd BufEnter *.md set ft=pandoc
 
 " format file
-map ff mfgggqg`f
+map ff mfgggqG`f
 ]])
 
 require("user.lazy")
