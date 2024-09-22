@@ -19,7 +19,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 set ts=8 sw=8 sts=8 cc=80 tw=79
-autocmd BufEnter *.html,*.css,*.js set ts=2 sts=2 sw=2
+autocmd BufEnter *.html,*.css,*.js set ts=4 sts=4 sw=4
 
 let g:mapleader=","
 "" Window commands
@@ -72,6 +72,7 @@ autocmd BufEnter *.md set ft=pandoc
 
 " format file
 map ff mfgggqG`f
+
 ]])
 
 require("user.lazy")
