@@ -35,6 +35,7 @@
        (split-window-below 20 (selected-window))
        (eshell))
 
+(package-initialize)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -43,10 +44,11 @@
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(global-display-line-numbers-mode t)
+ '(highlight-indent-guides-method 'column)
  '(inhibit-startup-screen t)
  '(markdown-command "pandoc")
  '(package-selected-packages
-   '(markdown-mode evil company yasnippet lua-mode go-mode gcmh)))
+   '(dashboard highlight-indent-guides markdown-mode evil company yasnippet lua-mode go-mode gcmh)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

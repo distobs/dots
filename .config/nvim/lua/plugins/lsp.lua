@@ -16,6 +16,7 @@ return {
 
 			local lattach = function (client, bufnr)
 				local opts = {buffer = bufnr}
+				client.server_capabilities.semanticTokensProvider = nil
 			end
 
 			lzero.extend_lspconfig({
