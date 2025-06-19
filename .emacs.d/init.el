@@ -63,7 +63,8 @@
  '(inhibit-startup-screen t)
  '(markdown-command "pandoc")
  '(package-selected-packages
-   '(dired-sidebar dashboard markdown-mode evil company yasnippet gcmh)))
+   '(company dashboard dired-sidebar eglot-inactive-regions evil gcmh
+	     markdown-mode yasnippet)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
