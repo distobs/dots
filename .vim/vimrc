@@ -1,0 +1,51 @@
+let g:mapleader=","
+
+" SHORTCUTS
+nmap <leader>w <C-w> " window shortcut
+nmap <leader>cr <C-r> " redo shortcut
+
+" MOVEMENT KEYMAPS
+nmap <leader>cd <C-d> " go up
+nmap <leader>cu <C-u> " go down
+nmap ff mfgggqG`f " format file
+
+" BUFFER KEYMAPS
+nmap <leader><leader> :ls<cr>:b<space> " open buffer list
+nmap <leader>bp :bp<cr> " previous buffer
+nmap <leader>bn :bn<cr> " next buffer
+
+" SPECIAL OPTIONS
+" remember last line when opening
+augroup vimStartup
+	autocmd!
+	autocmd BufReadPost *
+		\ let line = line("'\"")
+		\ | if line >= 1 && line <= line("$") && &filetype !~# 'commit'
+		\      && index(['xxd', 'gitrebase'], &filetype) == -1
+		\ |   execute "normal! g`\""
+		\ | endif
+augroup END
+
+" GENERAL OPTIONS
+set matchtime=0 ic nu
+set nohlsearch
+
+" WHITESPACE HIGHLIGHTING
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+" STYLE
+set ts=8 sw=8 sts=8 cc=80 tw=79 noexpandtab
+set cino=t0,l1,:0
+autocmd BufEnter *.md set ft=pandoc
+autocmd BufEnter *.html,*.css,*.js set ts=4 sts=4 sw=4
+
+" COLOR
+colo catppuccin_mocha
+
+" COC
+source coc.vim

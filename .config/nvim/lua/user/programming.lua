@@ -8,6 +8,8 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 ]])
 
+vim.cmd([[inoremap <buffer> > ></<C-x><C-o><C-y><C-o>%<CR><C-o>O]])
+
 ---------- STYLE ----------
 vim.cmd([[set ts=8 sw=8 sts=8 cc=80 tw=79 noexpandtab]])
 

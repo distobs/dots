@@ -33,6 +33,10 @@
 (use-package eglot
   :hook (c-mode-common . eglot-ensure))
 
+;; WEB SETTINGS
+
+(use-package web-mode)
+
 ;; DIRED SETTINGS
 (use-package dired-sidebar
   :commands (dired-sidebar-toggle-sidebar))
@@ -64,7 +68,7 @@
  '(markdown-command "pandoc")
  '(package-selected-packages
    '(company dashboard dired-sidebar eglot-inactive-regions evil gcmh
-	     markdown-mode yasnippet)))
+	     markdown-mode web-mode yasnippet)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
