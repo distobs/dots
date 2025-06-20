@@ -1,4 +1,3 @@
-source $MYVIMDIR/defaults.vim
 let g:mapleader=","
 
 " SHORTCUTS
