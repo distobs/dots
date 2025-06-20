@@ -1,3 +1,4 @@
+source $MYVIMDIR/defaults.vim
 let g:mapleader=","
 
 " SHORTCUTS
@@ -27,8 +28,24 @@ augroup vimStartup
 augroup END
 
 " GENERAL OPTIONS
+set nocompatible
+set ruler
+set showcmd
+set ttimeout
+set ttimeoutlen=100
+set display=truncate
+set scrolloff=5
+set incsearch
+set nrformats-=octal
+filetype plugin indent on
+syntax on
+let c_comment_strings=1
+set nolangremap
 set matchtime=0 ic nu
+set laststatus=2
 set nohlsearch
+set mouse=a
+set autoindent smartindent
 
 " WHITESPACE HIGHLIGHTING
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -43,9 +60,10 @@ set ts=8 sw=8 sts=8 cc=80 tw=79 noexpandtab
 set cino=t0,l1,:0
 autocmd BufEnter *.md set ft=pandoc
 autocmd BufEnter *.html,*.css,*.js set ts=4 sts=4 sw=4
+let g:html_indent_inctags = "head,body,p"
 
 " COLOR
 colo catppuccin_mocha
 
 " COC
-source coc.vim
+source $MYVIMDIR/coc.vim
