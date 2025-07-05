@@ -5,5 +5,5 @@ function install() {
 		--branch=${2:-"master"} ${3};
 }
 
-install "catppuccin/vim" "main" "catppuccin"
+install "gruvbox-community/gruvbox"
 install "neoclide/coc.nvim" "release"

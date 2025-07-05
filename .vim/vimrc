@@ -64,5 +64,8 @@ let g:html_indent_inctags = "head,body,p"
 " COLOR
 colo catppuccin_mocha
 
+" WEB
+command Web :!firefox %
+
 " COC
 source $MYVIMDIR/coc.vim
