@@ -62,7 +62,7 @@ autocmd BufEnter *.html,*.css,*.js set ts=4 sts=4 sw=4
 let g:html_indent_inctags = "head,body,p"
 
 " COLOR
-colo catppuccin_mocha
+colo gruvbox
 
 " WEB
 command Web :!firefox %
