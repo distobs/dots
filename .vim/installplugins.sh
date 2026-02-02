@@ -8,3 +8,4 @@ function install() {
 install "gruvbox-community/gruvbox"
 install "neoclide/coc.nvim" "release"
 install "tpope/vim-sleuth"
+install "tpope/vim-commentary"
